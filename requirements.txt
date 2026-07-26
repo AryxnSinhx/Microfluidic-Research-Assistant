@@ -1,0 +1,23 @@
+# Training (Tier 3 RAFT fine-tune) -- validated on Kaggle T4/T4x2
+transformers==4.44.2
+trl==0.10.1
+peft==0.12.0
+accelerate==0.34.2
+datasets==2.21.0
+huggingface_hub==0.24.6
+bitsandbytes  # intentionally unpinned -- pinning to 0.43.1 caused a missing
+              # libbitsandbytes_cuda128.so error on Kaggle's CUDA 12.8 environment
+
+# RAG pipeline / retrieval
+faiss-cpu     # NOT faiss-gpu -- embedding/retrieval run on CPU by design
+sentence-transformers
+
+# Inference
+torch
+numpy
+
+# Demo
+gradio
+
+# Data prep (if regenerating chunks/embeddings locally)
+# PyPDF2 or pdfplumber, depending on which you used for extraction -- fill in
