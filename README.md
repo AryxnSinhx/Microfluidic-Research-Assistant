@@ -71,7 +71,7 @@ contain an answer, in specific, identified conditions -- root-caused to a traini
 construction choice where every one of the 15 corpus papers was used as a
 "withheld source" example with an identical abstention template. Full
 investigation, isolation testing, and root-cause analysis in
-[`docs/ablation_writeup.md`](docs/ablation_writeup.md).
+[`docs/ablation_writeup.md`](docs/ablation_study.md).
 
 ## Repo Structure
 
