@@ -37,7 +37,7 @@ from datasets import load_dataset
 # ---------------------------------------------------------------------------
 # CONFIG — edit these
 # ---------------------------------------------------------------------------
-RAFT_PATH = "/kaggle/input/your-dataset/raft_dataset.jsonl"
+RAFT_PATH = "data pipeline/2. raft generation/result/raft_dataset.jsonl"
 OUT_PATH = "/kaggle/working/final_training_mixture.jsonl"
 
 
