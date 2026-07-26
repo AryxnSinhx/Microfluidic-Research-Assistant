@@ -182,6 +182,8 @@ applied to the run that produced the current checkpoints).
 | 60 | 0.2553 | 0.4430 |
 | 80 | 0.1706 | 0.3572 |
 | 100 | 0.1715 | 0.3824 |
+| 120 | 0.080000 | 0.424433 |
+| 140 | 0.063000 | 0.442293 |
 
 Training loss falls steadily; validation loss fluctuates without a clear
 downward trend (notably increasing at step 60 before dropping again at step
