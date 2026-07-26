@@ -1,0 +1,39 @@
+
+model:
+  base_model: mistralai/Mistral-7B-Instruct-v0.2      
+  torch_dtype: fp16                           
+                                               
+                                              
+lora:
+  r: 16                                       
+  alpha: 32                                
+  dropout: 0.05                               
+  target_modules: []                          
+
+training:
+  device_map: {"": 0}                                                                      
+  max_seq_length: 2048                                                                   
+  num_train_epochs: 3                      
+  save_steps: 20                           
+  eval_steps: 20                            
+                                               
+  load_best_model_at_end: true                
+  save_total_limit: 3                      
+
+data:
+  training_mixture: final_training_mixture.jsonl   
+  bucket_composition:                              
+    raft_domain: 906
+    sciq: 453
+    sciq_abstention: 181
+    camel_chemistry: 136
+    camel_physics: 136
+
+packages:                                     
+  transformers: "4.44.2"
+  trl: "0.10.1"
+  peft: "0.12.0"
+  accelerate: "0.34.2"
+  datasets: "2.21.0"
+  huggingface_hub: "0.24.6"
+  bitsandbytes: "unpinned"                    
