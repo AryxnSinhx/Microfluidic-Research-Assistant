@@ -1,7 +1,7 @@
 import json
 from collections import Counter, defaultdict
 
-chunks = [json.loads(l) for l in open(r"directory\chunks.jsonl")]
+chunks = [json.loads(l) for l in open(r"data pipeline/1. extraction & chunking/result/chunks.jsonl")]
 print(f"Total chunks: {len(chunks)} from {len(set(c['paper_title'] for c in chunks))} papers")
 
 # 1. Which papers fell back to no-heading-detected?
