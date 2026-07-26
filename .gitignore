@@ -1,0 +1,27 @@
+# Model weights -- these live on HF Hub, not in git
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# FAISS index -- check size before deciding whether to commit or .gitignore this;
+# see data_pipeline/README.md for the current decision
+# microfluidics.index
+
+# Source PDFs -- likely copyrighted, don't commit the papers themselves
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+venv/
+*.egg-info/
+
+# Kaggle/notebook artifacts
+.kaggle/
+
+# OS cruft
+.DS_Store
+Thumbs.db
