@@ -34,11 +34,9 @@ os.environ.setdefault("HF_HUB_ENABLE_HF_TRANSFER", "0")
 
 from datasets import load_dataset
 
-# ---------------------------------------------------------------------------
-# CONFIG — edit these
-# ---------------------------------------------------------------------------
+# CONFIGURATION
 RAFT_PATH = "data pipeline/2. raft generation/result/raft_dataset.jsonl"
-OUT_PATH = "/kaggle/working/final_training_mixture.jsonl"
+OUT_PATH = "data pipeline/3. data bucket compilation/result/final_training_mixture.jsonl"
 
 
 USE_LOCAL_FILES = False                                #if Hugging Face Hub is flaky, set True after downloading SciQ/CAMEL elsewhere and uploading as Kaggle Dataset
