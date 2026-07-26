@@ -75,7 +75,7 @@ investigation, isolation testing, and root-cause analysis in
 
 ## Repo Structure
 
-- [`data_pipeline/`]((https://github.com/AryxnSinhx/Microfluidic-Research-Assistant/tree/a9b5094fdb6fb20e636f1661855af459270bf10f/data%20pipeline)) -- chunk extraction, RAFT QA synthesis, final training mixture
+- [`data_pipeline/`](data_pipeline/) -- chunk extraction, RAFT QA synthesis, final training mixture
 - [`finetuning/`](finetuning/) -- Tier 3 RAFT fine-tune of Mistral-7B
 - [`rag_pipeline/`](rag_pipeline/) -- retrieval + generation, the validated architecture
 - [`ablation_study/`](ablation_study/) -- 4-way ablation harness, scoring tools, results
