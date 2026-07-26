@@ -147,4 +147,4 @@ system's reliability.
 - A Gradio demo with source citations has been built on the same validated pipeline for interview/portfolio use.
 
 ---
-*See ([full pipeline bugs findings](full_pipeline_bugs_findings.md](https://github.com/AryxnSinhx/Microfluidic-Research-Assistant/blob/3dcaa492ee8bec9245cd60660996b3f93f0aec1b/docs/full%20pipeline%20bugs%20findings.md)) for the complete stage-by-stage bug/mitigation log across the entire pipeline.*
+*See [`full_pipeline_bugs_findings.md`](full_pipeline_bugs_findings.md) for the complete stage-by-stage bug/mitigation log across the entire pipeline.*
