@@ -57,7 +57,7 @@ bilirubin detection chemistry (the Van den Bergh / diazo reaction).
 evaluated across 4 conditions. Scores below are **corrected** -- an initial manual
 scoring pass rated 3 false-abstention responses as "appropriate"; correcting those
 against the raw retrieval evidence changed the conclusion (see
-[`docs/ablation_writeup.md`]([docs/ablation_writeup.md](https://github.com/AryxnSinhx/Microfluidic-Research-Assistant/blob/ac3d80e94ea2ae8b93b4abe4adff5b009e53acdd/docs/ablation%20study.md)) for the full story).
+[`docs/ablation_writeup.md`](docs/ablation_writeup.md) for the full story).
 
 | Condition | Avg. Fluency (1-5) | Avg. Grounding (1-5) | Hallucination Rate |
 |---|---|---|---|
@@ -75,7 +75,7 @@ investigation, isolation testing, and root-cause analysis in
 
 ## Repo Structure
 
-- [`data pipeline/`](data pipeline/) -- chunk extraction, RAFT QA synthesis, final training mixture
+- [`data_pipeline/`](data_pipeline/) -- chunk extraction, RAFT QA synthesis, final training mixture
 - [`finetuning/`](finetuning/) -- Tier 3 RAFT fine-tune of Mistral-7B
 - [`rag_pipeline/`](rag_pipeline/) -- retrieval + generation, the validated architecture
 - [`ablation_study/`](ablation_study/) -- 4-way ablation harness, scoring tools, results
