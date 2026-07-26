@@ -75,7 +75,7 @@ investigation, isolation testing, and root-cause analysis in
 
 ## Repo Structure
 
-- [`data pipeline/`](data pipeline/) -- chunk extraction, RAFT QA synthesis, final training mixture
+- [`data_pipeline/`](data_pipeline/) -- chunk extraction, RAFT QA synthesis, final training mixture
 - [`finetuning/`](finetuning/) -- Tier 3 RAFT fine-tune of Mistral-7B
 - [`rag_pipeline/`](rag_pipeline/) -- retrieval + generation, the validated architecture
 - [`ablation_study/`](ablation_study/) -- 4-way ablation harness, scoring tools, results
