@@ -57,7 +57,7 @@ bilirubin detection chemistry (the Van den Bergh / diazo reaction).
 evaluated across 4 conditions. Scores below are **corrected** -- an initial manual
 scoring pass rated 3 false-abstention responses as "appropriate"; correcting those
 against the raw retrieval evidence changed the conclusion (see
-[`docs/ablation_writeup.md`](docs/ablationstudy.md) for the full story).
+[`docs/ablation_writeup.md`](docs/ablation_study.md) for the full story).
 
 | Condition | Avg. Fluency (1-5) | Avg. Grounding (1-5) | Hallucination Rate |
 |---|---|---|---|
