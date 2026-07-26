@@ -91,4 +91,4 @@ explicit row rather than silently omitted, flagged for input.
 | Private Hugging Face model repo caused a 401/repo-not-found error when loading the fine-tuned model in a fresh Kaggle session. | The merged model repo is private; an earlier session had been authenticated, but a fresh kernel doesn't retain that state. | Added Hugging Face Hub authentication via Kaggle Secrets (`kaggle_secrets.UserSecretsClient`) at the top of the script, executed before any model load. | Demo authenticates automatically at startup without exposing the token in the notebook. |
 
 ---
-*See [`ablation study.md`](ablation study.md) for the full ablation methodology and root-cause narrative.*
+*See [`ablation study.md`]([ablation study.md](https://github.com/AryxnSinhx/Microfluidic-Research-Assistant/blob/7ddf5a7bd7e23db3fe4112cd00581608c40e33e4/docs/ablation%20study.md)) for the full ablation methodology and root-cause narrative.*
