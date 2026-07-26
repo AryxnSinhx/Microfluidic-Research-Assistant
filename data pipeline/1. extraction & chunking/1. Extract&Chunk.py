@@ -12,11 +12,11 @@ from spellchecker import SpellChecker
 
 _SPELL = SpellChecker()
 
-# ---------------------------------------------------------------------------
-# CONFIG — edit these
-# ---------------------------------------------------------------------------
+
+# CONFIG
+
 PDF_DIR = r"directory\papers"          
-OUT_PATH = r"your_desired_result directory\chunks.jsonl"   
+OUT_PATH = r"data pipeline/1. extraction & chunking/result/chunks.jsonl"   
 CHUNK_TOKENS = 350                   
 OVERLAP_TOKENS = 50                  
 MIN_CHUNK_CHARS = 60                 
@@ -64,7 +64,7 @@ def repair_concatenated_words(text: str) -> str:
         token = m.group(0)
         split = wordninja.split(token)
         if len(split) <= 1:
-            return token  # wordninja found no good split — leave it as-is
+            return token  
         return " ".join(split)
 
     return re.sub(rf"[a-zA-Z]{{{CONCAT_WORD_MIN_LEN},}}", repair_token, text)
